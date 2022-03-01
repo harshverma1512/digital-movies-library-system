@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "613161660220",
+    "project_id": "digital-movie-search",
+    "storage_bucket": "digital-movie-search.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613161660220:android:d22dc8af0c497c25673839",
+        "android_client_info": {
+          "package_name": "com.example.digitalmoviesearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613161660220-k2dpjluuneg5u65jeqtv1nb0ckrime78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWqlCIyK_cSkhErMQSMeWqadCAKVuriYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613161660220-k2dpjluuneg5u65jeqtv1nb0ckrime78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

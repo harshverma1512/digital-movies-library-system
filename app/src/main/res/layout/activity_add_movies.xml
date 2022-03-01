@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMoviesActivity">
+
+<ImageView
+            android:id="@+id/movieImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/placeholder"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/movieName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginEnd="16dp"
+        android:hint="Movie Name"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieImage"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/movieDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="5"
+        android:hint="Movie Description"
+        android:inputType="textMultiLine"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/movieName"
+        app:layout_constraintStart_toStartOf="@+id/movieName"
+        app:layout_constraintTop_toBottomOf="@+id/movieName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/movieRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:hint="Rating"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/movieDescription"
+        app:layout_constraintStart_toStartOf="@+id/movieDescription"
+        app:layout_constraintTop_toBottomOf="@+id/movieDescription"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/movieLaunchDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Launch Date"
+        android:inputType="date"
+        android:maxLines="1"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/movieRating"
+        app:layout_constraintStart_toStartOf="@+id/movieRating"
+        app:layout_constraintTop_toBottomOf="@+id/movieRating"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnAddMovie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Add Movie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieLaunchDate" />
+
+    <EditText
+        android:id="@+id/movielink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:hint="Trailer link"
+        app:layout_constraintEnd_toEndOf="@+id/movieLaunchDate"
+        app:layout_constraintStart_toStartOf="@+id/movieLaunchDate"
+        app:layout_constraintTop_toBottomOf="@id/movieLaunchDate"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <EditText
+        android:id="@+id/telegramlink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Telegream link"
+        app:layout_constraintEnd_toEndOf="@+id/movielink"
+        app:layout_constraintStart_toStartOf="@+id/movielink"
+        app:layout_constraintTop_toBottomOf="@id/movielink"
+        tools:layout_editor_absoluteY="268dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
