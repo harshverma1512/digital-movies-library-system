@@ -60,7 +60,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
         binding.signUpActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

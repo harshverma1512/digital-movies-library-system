@@ -32,8 +32,6 @@ public class SignupActivtiy extends AppCompatActivity {
         binding = ActivitySignupActivtiyBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
-
         binding.loginActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
